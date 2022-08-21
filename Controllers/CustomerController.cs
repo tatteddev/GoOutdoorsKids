@@ -10,7 +10,7 @@ namespace GoOutdoorsKids.Controllers
 
         private static readonly string[] titles = new[]
         {
-        "The Avid Angular", "The Adventurous", "Cool Camper"
+        "The Avid Angular", "The Adventurous", "Cool Camper", "Hunter Heroine"
        };
 
         private readonly ILogger<CustomerController> _logger;

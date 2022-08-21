@@ -10,9 +10,9 @@
               <button id="dropdownBasic1" class="btn btn-small btn-success" ngbDropdownToggle (click)="getTitles()"><fa-icon [icon]="faCircleChevronDown"></fa-icon>
               </button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button ngbDropdownItem>Action - 1</button>
-                <button ngbDropdownItem>Another Action</button>
-                <button ngbDropdownItem>Something else is here</button>
+                <button ngbDropdownItem *ngFor="let title of titles;" (click)="setTitle(title)">
+                  {{title}}
+                </button>
               </div>
             </div>
 
