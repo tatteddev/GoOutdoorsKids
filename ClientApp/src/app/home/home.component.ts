@@ -13,11 +13,15 @@ export class HomeComponent {
   faCircleChevronDown = faCircleChevronDown;
   faDollarSign = faDollarSign;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<CustomerObject>(baseUrl + 'customer').subscribe(result => {
       this.customer.name = result.name;
       this.customer.title = result.title;
     }, error => console.error(error));
+  }
+
+  public getTitles() {
+    this.http.get
   }
 }
 

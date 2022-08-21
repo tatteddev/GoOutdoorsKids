@@ -22,7 +22,7 @@ namespace GoOutdoorsKids.Controllers
         }
 
         [HttpGet]
-        [Route("/gettitles")]
+        [Route("gettitles")]
         public Array GetTitles()
         {
             return titles;

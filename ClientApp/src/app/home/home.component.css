@@ -7,3 +7,7 @@
     display: flex;
     justify-content: right;
 }
+
+.dropdown-toggle::after {
+    display: none;
+}

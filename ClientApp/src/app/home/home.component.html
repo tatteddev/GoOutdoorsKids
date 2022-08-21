@@ -4,22 +4,23 @@
     <br>
     <div class="row">
       <div class="col-10">
-        <h3>{{customer.name}}, {{customer.title}} &nbsp;&nbsp;&nbsp; <button class="btn btn-small btn-success"><fa-icon [icon]="faCircleChevronDown"></fa-icon></button></h3>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown button
-          </button>
-          <div class="col">
+        <h3>{{customer.name}}, {{customer.title}} &nbsp;&nbsp;&nbsp;
+
             <div ngbDropdown class="d-inline-block">
-              <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+              <button id="dropdownBasic1" class="btn btn-small btn-success" ngbDropdownToggle (click)="getTitles()"><fa-icon [icon]="faCircleChevronDown"></fa-icon>
+              </button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                 <button ngbDropdownItem>Action - 1</button>
                 <button ngbDropdownItem>Another Action</button>
                 <button ngbDropdownItem>Something else is here</button>
               </div>
             </div>
-          </div>
-        </div>
+
+        </h3>
+
+
+
+
         <img src="../../assets/img/avatar.jpg" width="500px" height="500px">
       </div>
       <div id="divCurrency" class="col-2">
