@@ -1,0 +1,9 @@
+#divCurrency {
+    display: flex;
+    align-items: center;
+}
+
+#divPurchase {
+    display: flex;
+    justify-content: right;
+}

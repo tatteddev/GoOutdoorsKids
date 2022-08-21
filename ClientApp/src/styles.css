@@ -14,3 +14,21 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+body {
+  background-image: url("/assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 100px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.content-area {
+  padding: 15px; 
+  box-sizing: border-box;
+  text-align: center;
+}
